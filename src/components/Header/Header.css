@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side-container {
+    display: flex;
+}
+
+.right-side-container {
+    display: flex;
+}
