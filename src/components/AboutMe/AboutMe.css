@@ -1,0 +1,20 @@
+.about-me-container {
+    border: 1px solid black;
+    height: 75%;
+    padding-left: 5%;
+}
+
+.about-me-title {
+    font-size: 50px;
+}
+
+.individual-container {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.pong-img {
+    background-image: url("../../pong.png");
+    height: 20vh;
+    width: 40vw;
+}

@@ -7,7 +7,7 @@ import Contact from '../Contact/Contact';
 
 function App() {
   return (
-    <main>
+    <main className='app'>
       <Header />
       <AboutMe />
       <Projects />
