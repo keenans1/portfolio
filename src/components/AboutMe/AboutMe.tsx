@@ -3,7 +3,6 @@ import "./AboutMe.css";
 import pong from "../../pong.png";
 
 const AboutMe = () => {
-    // is the parent div even necessary? maybe just use a fragment, we will see
     return (
         <div className="about-me-container">
             <h2 className="about-me-title">About Me</h2>
