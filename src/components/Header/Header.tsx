@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Header.css";
-// import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-// import ThreeDRotation from '@mui/icons-material/ThreeDRotation';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
@@ -26,16 +24,13 @@ const Header = () => {
             <section className="left-side-container">
                 <h3 className="header-text">KS</h3>
             </section>
-
             <section className="right-side-container">
-                
                 <div className="desktop">
                     <h3 className="header-text">About Me</h3>
                     <h3 className="header-text">Projects</h3>
                     <h3 className="header-text">Contact</h3>
                     <DarkModeIcon fontSize="large" className="header-text"/>
                 </div>
-
                 <div className="mobile">
                     <Button
                         id="basic-button"
@@ -60,7 +55,6 @@ const Header = () => {
                         <MenuItem>Contact</MenuItem>
                     </Menu>
                 </div>
-
             </section>
         </header>
     )
