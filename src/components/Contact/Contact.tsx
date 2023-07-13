@@ -1,13 +1,17 @@
 import React from "react";
 import "./Contact.css";
-import pong from "../../pong.png";
 
 const Contact = () => {
+
+    const customHeight = {
+        height: '50vh'
+    }
+
     return (
-        <div className="contact-container">
-            <h2 className="contact-title">Contact Me</h2>
-            <section className="contact-content">
-                <section className="contact-text-container">
+        <div style={customHeight} className="main-content-display-container">
+            <h2>Contact Me</h2>
+            <section className="main-content-display-container content-box">
+                <section className="main-content-display-container content-padding">
                     <a href="https://www.linkedin.com/in/keenan-southall/" target="_blank" rel="noopener" className="pre-turing-projects-link">See me on LinkedIn!</a>
                     <p>Feel free to contact me via email:</p>
                     <p>keenansouthall67@gmail.com</p>

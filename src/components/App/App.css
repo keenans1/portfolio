@@ -3,6 +3,30 @@
   height: 100%;
 }
 
-/* p {
-  font-weight: extra-bold;
-} */
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.main-content-display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-box {
+  border: solid black 1px;
+  width: 80%;
+}
+
+.content-image {
+  width: 100%;
+  height: 100%;
+}
+
+.content-padding {
+  padding: 5%;
+}
