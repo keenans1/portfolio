@@ -3,16 +3,14 @@ import "./Contact.css";
 import pong from "../../pong.png";
 
 const Contact = () => {
-    // is the parent div even necessary? maybe just use a fragment, we will see
     return (
         <div className="contact-container">
-            <h2 className="contact-title">About Me</h2>
+            <h2 className="contact-title">Contact Me</h2>
             <section className="contact-content">
-                <img src={pong} className="pong-image" alt="me playing ping pong"/>
-                <section className="contact-text">
-                    <p>text</p>
-                    <p>text</p>
-                    <p>text</p>
+                <section className="contact-text-container">
+                    <a href="https://www.linkedin.com/in/keenan-southall/" target="_blank" rel="noopener" className="pre-turing-projects-link">See me on LinkedIn!</a>
+                    <p>Feel free to contact me via email:</p>
+                    <p>keenansouthall67@gmail.com</p>
                 </section>
             </section> 
         </div>

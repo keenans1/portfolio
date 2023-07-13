@@ -27,7 +27,6 @@ const Projects = () => {
 
 
                     <a href="https://keenansouthall.azurewebsites.net/" target="_blank" rel="noopener" className="pre-turing-projects-link">Pre-Turing Projects</a>
-
                 </section>
             </section> 
         </div>
