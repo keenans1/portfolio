@@ -30,7 +30,7 @@ const Projects = () => {
       }
       
     return (
-        <div className="main-content-display-container">
+        <div id="projects" className="main-content-display-container">
             <h2>Software Projects</h2>
             <section className="main-content-display-container content-box">
                 <section className="main-content-display-container content-padding">

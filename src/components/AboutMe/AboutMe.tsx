@@ -4,7 +4,7 @@ import pong from "../../pong.png";
 
 const AboutMe = () => {
     return (
-        <div className="main-content-display-container">
+        <div id="aboutme" className="main-content-display-container">
             <h2>About Me</h2>
             <section className="main-content-display-container content-box">
                 <img src={pong} className="content-image" alt="me playing ping pong"/>

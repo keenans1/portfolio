@@ -26,6 +26,9 @@ const Header = () => {
             </section>
             <section className="right-side-container">
                 <div className="desktop">
+                    {/* <h3 className="header-text">About Me</h3>
+                    <h3 className="header-text">Projects</h3>
+                    <h3 className="header-text">Contact</h3> */}
                     <h3 className="header-text">About Me</h3>
                     <h3 className="header-text">Projects</h3>
                     <h3 className="header-text">Contact</h3>
@@ -50,9 +53,18 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem>About Me</MenuItem>
+                        {/* <MenuItem>About Me</MenuItem>
                         <MenuItem>Projects</MenuItem>
-                        <MenuItem>Contact</MenuItem>
+                        <MenuItem>Contact</MenuItem> */}
+                        <MenuItem>
+                            <a href="#aboutme">About Me</a>
+                        </MenuItem>
+                        <MenuItem>
+                            <a href="#projects">Projects</a>
+                        </MenuItem>
+                        <MenuItem>
+                            <a href="#contact">Contact</a>
+                        </MenuItem>
                     </Menu>
                 </div>
             </section>

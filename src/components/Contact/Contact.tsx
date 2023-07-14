@@ -8,7 +8,7 @@ const Contact = () => {
     }
 
     return (
-        <div style={customHeight} className="main-content-display-container">
+        <div id="contact" style={customHeight} className="main-content-display-container">
             <h2>Contact Me</h2>
             <section className="main-content-display-container content-box">
                 <section className="main-content-display-container content-padding">
