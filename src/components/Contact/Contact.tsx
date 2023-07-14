@@ -4,7 +4,7 @@ import "./Contact.css";
 const Contact = () => {
 
     const customHeight = {
-        height: '50vh'
+        paddingBottom: '10%'
     }
 
     return (

@@ -19,6 +19,10 @@ const Header = () => {
       setAnchorEl(null);
     };
 
+    const customerColor = {
+        backgroundColor: 'darkGrey'
+    }
+
     return (
         <header>
             <section className="left-side-container">
@@ -26,9 +30,6 @@ const Header = () => {
             </section>
             <section className="right-side-container">
                 <div className="desktop">
-                    {/* <h3 className="header-text">About Me</h3>
-                    <h3 className="header-text">Projects</h3>
-                    <h3 className="header-text">Contact</h3> */}
                     <h3 className="header-text">About Me</h3>
                     <h3 className="header-text">Projects</h3>
                     <h3 className="header-text">Contact</h3>
@@ -53,16 +54,13 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        {/* <MenuItem>About Me</MenuItem>
-                        <MenuItem>Projects</MenuItem>
-                        <MenuItem>Contact</MenuItem> */}
-                        <MenuItem>
+                        <MenuItem style={customerColor}>
                             <a href="#aboutme">About Me</a>
                         </MenuItem>
-                        <MenuItem>
+                        <MenuItem style={customerColor}>
                             <a href="#projects">Projects</a>
                         </MenuItem>
-                        <MenuItem>
+                        <MenuItem style={customerColor}>
                             <a href="#contact">Contact</a>
                         </MenuItem>
                     </Menu>

@@ -7,9 +7,24 @@ header {
     height: 10vh;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+    border-bottom: 1px solid white;
+    height: 10vh;
+}
+
 .header-text {
     font-size: 20px;
     margin-left: 10px;
+}
+
+.header-text {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
 }
 
 .left-side-container {
@@ -33,6 +48,10 @@ header {
 
 .hamburger {
     color: black;
+}
+
+.hamburger {
+    color: white;
 }
 
 @media screen and (max-width: 449px) {

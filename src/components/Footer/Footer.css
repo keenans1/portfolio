@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-top: 1px solid black;
+    height: 7vh;
+    font-size: small;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    border-top: 1px solid white;
+    height: 7vh;
+    font-size: small;
+}
