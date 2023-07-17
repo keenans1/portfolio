@@ -24,7 +24,7 @@ const Header = () => {
     }
 
     return (
-        <header>
+        <header id="top">
             <section className="left-side-container">
                 <h3 className="header-text">KS</h3>
             </section>
@@ -54,13 +54,13 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem style={customerColor}>
+                        <MenuItem style={customerColor} onClick={handleClose}>
                             <a href="#aboutme">About Me</a>
                         </MenuItem>
-                        <MenuItem style={customerColor}>
+                        <MenuItem style={customerColor} onClick={handleClose}>
                             <a href="#projects">Projects</a>
                         </MenuItem>
-                        <MenuItem style={customerColor}>
+                        <MenuItem style={customerColor} onClick={handleClose}>
                             <a href="#contact">Contact</a>
                         </MenuItem>
                     </Menu>
