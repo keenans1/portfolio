@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import ThemeContext from "../../ThemeContext";
 import "./Header.css";
+import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
@@ -7,6 +9,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
 
 const Header = () => {
+
+    const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
@@ -19,14 +23,10 @@ const Header = () => {
       setAnchorEl(null);
     };
 
-    const customerColor = {
-        backgroundColor: 'darkGrey'
-    }
-
     return (
-        <header id="top">
-            <section className="left-side-container">
-                <h3 className="header-text">KS</h3>
+        <header id="top" className={isDarkMode ? "dark-mode" : "light-mode"}>
+            <section className="left-side-container" onClick={toggleTheme}>
+                {isDarkMode ? <LightModeIcon fontSize="large" className="header-text-dark-mode"/> : <DarkModeIcon fontSize="large" className="header-text-light-mode"/>}
             </section>
             <section className="right-side-container">
                 <div className="desktop">
@@ -43,7 +43,7 @@ const Header = () => {
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick}
                     >
-                        <MenuIcon fontSize="large" className="hamburger"/>
+                        <MenuIcon fontSize="large" className={isDarkMode ? "hamburger-menu-dark-mode" : "hamburger-menu-light-mode"}/>
                     </Button>
                     <Menu
                         id="basic-menu"
@@ -54,13 +54,13 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem style={customerColor} onClick={handleClose}>
+                        <MenuItem sx={ isDarkMode ? {backgroundColor: 'darkgrey'} : {backgroundColor: 'white'}} onClick={handleClose}>
                             <a href="#aboutme">About Me</a>
                         </MenuItem>
-                        <MenuItem style={customerColor} onClick={handleClose}>
+                        <MenuItem sx={ isDarkMode ? {backgroundColor: 'darkgrey'} : {backgroundColor: 'white'}} onClick={handleClose}>
                             <a href="#projects">Projects</a>
                         </MenuItem>
-                        <MenuItem style={customerColor} onClick={handleClose}>
+                        <MenuItem sx={ isDarkMode ? {backgroundColor: 'darkgrey'} : {backgroundColor: 'white'}} onClick={handleClose}>
                             <a href="#contact">Contact</a>
                         </MenuItem>
                     </Menu>
