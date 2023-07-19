@@ -54,6 +54,10 @@
     color: white;
 }
 
+.menu-link {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 449px) {
     .desktop {
         display: none;

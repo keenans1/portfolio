@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../../ThemeContext";
 import "./Projects.css";
 
 const Projects = () => {
+
+    const { isDarkMode } = useContext(ThemeContext);
     
     const info = {
         titles: ["City Search Github Repo", "Spoiled Fruit Github Repo", "Grant Guru Github Repo"],
@@ -16,7 +19,7 @@ const Projects = () => {
         for (let i = 0; i < 3; i++) {
           gifElements.push(
             <React.Fragment key={i}>
-              <a href={info.githubLinks[i]} target="_blank" rel="noopener">
+              <a href={info.githubLinks[i]} target="_blank" rel="noopener" className={isDarkMode ? "link-dark-mode" : "link-light-mode"}>
                 {info.titles[i]}
               </a>
               <a href={info.deployedLinks[i]} target="_blank" rel="noopener" className="gif-container">
@@ -35,7 +38,7 @@ const Projects = () => {
             <section className="main-content-display-container content-box">
                 <section className="main-content-display-container content-padding">
                     {displayGifs()}
-                    <a href="https://keenansouthall.azurewebsites.net/" target="_blank" rel="noopener">Pre-Turing Projects</a>
+                    <a href="https://keenansouthall.azurewebsites.net/" target="_blank" rel="noopener" className={isDarkMode ? "link-dark-mode" : "link-light-mode"}>Pre-Turing Projects</a>
                 </section>
             </section> 
         </div>

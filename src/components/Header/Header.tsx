@@ -55,13 +55,13 @@ const Header = () => {
                         }}
                     >
                         <MenuItem sx={ isDarkMode ? {backgroundColor: 'darkgrey'} : {backgroundColor: 'white'}} onClick={handleClose}>
-                            <a href="#aboutme">About Me</a>
+                            <a href="#aboutme" className={isDarkMode ? "menu-link link-dark-mode" : "menu-link link-light-mode"}>About Me</a>
                         </MenuItem>
                         <MenuItem sx={ isDarkMode ? {backgroundColor: 'darkgrey'} : {backgroundColor: 'white'}} onClick={handleClose}>
-                            <a href="#projects">Projects</a>
+                            <a href="#projects" className={isDarkMode ? "menu-link link-dark-mode" : "menu-link link-light-mode"}>Projects</a>
                         </MenuItem>
                         <MenuItem sx={ isDarkMode ? {backgroundColor: 'darkgrey'} : {backgroundColor: 'white'}} onClick={handleClose}>
-                            <a href="#contact">Contact</a>
+                            <a href="#contact" className={isDarkMode ? "menu-link link-dark-mode" : "menu-link link-light-mode"}>Contact</a>
                         </MenuItem>
                     </Menu>
                 </div>

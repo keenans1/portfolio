@@ -14,3 +14,12 @@ footer {
     background-color: lightgray;
     border-top: 1px solid black;
 }
+
+.footer-link {
+    padding: 0;
+    text-decoration: none;
+}
+
+/* .footer-link:visited {
+    color: inherit !important;
+} */
