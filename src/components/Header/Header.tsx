@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import ThemeContext from "../../ThemeContext";
 import "./Header.css";
 import LightModeIcon from '@mui/icons-material/LightMode';

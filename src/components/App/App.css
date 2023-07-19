@@ -1,30 +1,37 @@
-.app {
-  background-color: lightblue;
+main {
   height: 100%;
 }
 
-/* .app {
+
+/* .app-dark-mode {
   background-color: #000065;
-  height: 100%;
 } */
 
-h2 {
-  font-size: 40px;
+.app-dark-mode {
+  background-color: #000065;
+}
+
+.app-light-mode {
+  background-color: lightblue;
 }
 
 /* h2 {
   font-size: 40px;
-  color: white;
 } */
 
-p {
-  font-weight: bold;
+h2 {
+  font-size: 40px;
+  color: white;
 }
 
 /* p {
   font-weight: bold;
-  color: white;
 } */
+
+p {
+  font-weight: bold;
+  color: white;
+}
 
 .main-content-display-container {
   display: flex;
@@ -32,15 +39,15 @@ p {
   align-items: center;
 }
 
-.content-box {
+/* .content-box {
   border: solid black 1px;
   width: 80%;
-}
+} */
 
-/* .content-box {
+.content-box {
   border: solid white 1px;
   width: 80%;
-} */
+}
 
 .content-image {
   width: 100%;
@@ -50,14 +57,14 @@ p {
   padding: 5%;
 }
 
-a {
+/* a {
   padding-bottom: 5%;
   color: blue;
   text-decoration: none;
-}
+} */
 
-/* a {
+a {
   padding-bottom: 5%;
   color: white;
   text-decoration: underline;
-} */
+}

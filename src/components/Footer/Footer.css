@@ -1,32 +1,16 @@
 footer {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-    border-top: 1px solid black;
-    height: 10vh;
-    font-size: small;
-    padding-bottom: 5%;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-    border-top: 1px solid black;
     height: 10vh;
     font-size: small;
     padding-bottom: 3%;
 }
 
-/* footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-dark-mode {
     background-color: darkgrey;
     border-top: 1px solid white;
-    height: 7vh;
-    font-size: small;
-} */
+}
+
+.footer-light-mode {
+    background-color: lightgray;
+    border-top: 1px solid black;
+}
