@@ -25,15 +25,23 @@ p {
   align-items: center;
 }
 
-/* .content-box {
+
+
+.content-box {
   border: solid black 1px;
-  width: 80%;
-} */
+
+}
 
 .content-box {
   border: solid white 1px;
+}
+
+.content-box {
   width: 80%;
 }
+
+
+
 
 .content-image {
   width: 100%;

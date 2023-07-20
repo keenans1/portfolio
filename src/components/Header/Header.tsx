@@ -33,7 +33,7 @@ const Header = () => {
                     <h3 className="header-text">About Me</h3>
                     <h3 className="header-text">Projects</h3>
                     <h3 className="header-text">Contact</h3>
-                    <DarkModeIcon fontSize="large" className="header-text"/>
+                    {/* <DarkModeIcon fontSize="large" className="header-text"/> */}
                 </div>
                 <div className="mobile">
                     <Button

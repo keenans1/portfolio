@@ -13,7 +13,7 @@ const Header = () => {
     }
 
     const buttonStyles = {
-        backgroundColor: isDarkMode ? '#000065' : 'lightblue',
+        backgroundColor: isDarkMode ? '#000065' : 'lightblue'
     };
 
     return (

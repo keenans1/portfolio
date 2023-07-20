@@ -30,12 +30,16 @@ const Projects = () => {
         }
       
         return gifElements
-      }
+    }
+
+    const containerBorder = {
+      border: isDarkMode ? 'solid white 1px' : 'solid black 1px'
+    }
       
     return (
         <div id="projects" className="main-content-display-container">
             <h2>Software Projects</h2>
-            <section className="main-content-display-container content-box">
+            <section className="main-content-display-container content-box" style={containerBorder}>
                 <section className="main-content-display-container content-padding">
                     {displayGifs()}
                     <a href="https://keenansouthall.azurewebsites.net/" target="_blank" rel="noopener" className={isDarkMode ? "link-dark-mode" : "link-light-mode"}>Pre-Turing Projects</a>
